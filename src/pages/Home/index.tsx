@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Typography variant='h1' component='h1' style={{marginBottom: 24}}>
-        Frontier Loooong
+        Frontier Looong
       </Typography>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={4}>

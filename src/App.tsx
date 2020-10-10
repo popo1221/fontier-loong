@@ -1,6 +1,5 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
 import './App.scss'
 
@@ -11,7 +10,6 @@ import CssUnitTool from './pages/CssUnitTool'
 function App() {
   return (
     <>
-      <CssBaseline></CssBaseline>
       <Container fixed className="pt-24">
         <Router>
           <Switch>
