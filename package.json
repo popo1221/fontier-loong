@@ -12,25 +12,25 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
-    "node-sass": "^4.14.1",
-    "postcss-import": "^12.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3",
+    "react-use": "15.3.4",
     "tailwindcss": "^1.8.10",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "prestart": "npm run watch:css",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "build:css": "postcss src/tailwind.css -o src/shared.css",
-    "watch:css": "postcss src/tailwind.css -o src/shared.css"
+    "start": "rescripts start",
+    "build": "rescripts build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "prettier",
+      "prettier/@typescript-eslint",
+      "prettier/react"
+    ]
   },
   "browserslist": {
     "production": [
@@ -45,7 +45,13 @@
     ]
   },
   "devDependencies": {
+    "@rescripts/cli": "^0.0.14",
+    "@rescripts/rescript-env": "^0.0.12",
     "autoprefixer": "^10.0.1",
-    "postcss-cli": "^8.0.0"
+    "eslint-config-prettier": "^6.12.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^8.0.0",
+    "postcss-import": "^12.0.1",
+    "rescript-use-postcss-config": "^1.0.0"
   }
 }
